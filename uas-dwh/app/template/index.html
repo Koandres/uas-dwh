@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+</div>
+<div class="container">
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_lMhmU2Q4YFQbsjsigiIpcyXszuzeMNz031SH1Y1L5comR3JzzcHDcECg7qBEio05xbOxw0E67_3Z/pubhtml?widget=true&amp;headers=false"></iframe>
+  <form action="/prediksi" method="post">
+    <div class="mt-xl-5">
+      <label for="formGroupExampleInput" class="form-label" style="font-size: 30px; text-align: left;">Tahun</label>
+      <input type="text" name="tahun" class="form-control" id="formGroupExampleInput" placeholder="Masukan tahun" style="width: 30%;" />
+      <button type="submit" class="btn mt-3" style="background-color: #e3f2fd" ;>Prediksi</button>
+      <p style="font-size: 1.2em; margin-top: 10px">{{ prediction_text }}</p>
+    </div>
+  </form>
+</div>
+
+{%endblock%}
